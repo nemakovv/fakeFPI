@@ -1,0 +1,250 @@
+body{
+    position: relative;
+    background-color: #141313; 
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Sora, sans-serif;
+    color: white;
+    user-select: none;
+   
+}
+.mone-container{
+    position: relative;
+    height: auto;
+    max-width: 150%;
+    display: flex;
+    justify-content: center;
+}
+.fpi{
+    width: 220px;
+    
+}
+
+
+
+.container{
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.name{
+    font-weight: bold;
+}
+
+.coin-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93px;
+    height: 40px;
+
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.name-and-state{
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    right: 17%;
+    bottom: -3%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.svgshka{
+    padding: 8px;
+    backdrop-filter: blur(20px) brightness(2);
+    border-radius: 50%;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    p{
+        font-family: Sora, sans-serif;
+        color: #a0e633;
+        font-size: 48px;
+    }
+}
+
+.official{
+    
+    position: absolute;
+   bottom: 22%;
+    right: 10%;
+    background-color: #00000057;    
+    
+    width: 80%;
+    height: 100px;
+    z-index: -2;
+    opacity: 0;
+    border-radius: 20px;
+
+    transition-duration: 0.5s;
+}
+
+.official-item{
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+
+    background-color: #a0e633;
+}
+
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.158);
+    
+
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+
+    transition-duration: 0.7s;
+}
+
+.text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .off{
+        font-weight: bold;
+    }
+    .title{
+        opacity: 0.7;
+        font-size: 14px;
+    }
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: #8edf0c4b;
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    z-index: 1;
+}
+
+.wallet-menu{
+    margin-top: 23px;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.moneti, .connect, .curs{
+    backdrop-filter: blur(20px);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    width: 30%;
+    text-wrap: nowrap;
+    border-radius:  20px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff05;
+}
+.connect{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.point1, .point2, .point3{
+    height: 4px;
+    width: 4px;
+
+    background-color: #ffffff33;
+
+    border-radius: 20px;
+}
+.point1{
+    background-color: #a0e633;
+}
+.point-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.splide{
+    
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 91%;
+    margin: 90px auto;
+}
+.nick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    background-color: #ffffff05;
+
+
+    border-radius: 15px;
+    padding: 10px;
+
+    p{
+        color: #a0e633;
+    }
+}
+
+.bonuss{
+    
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+}
+
+
+
+
+@keyframes rotata{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
+
